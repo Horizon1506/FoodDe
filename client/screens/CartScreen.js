@@ -1,15 +1,39 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { StyleSheet, View, Text,TouchableOpacity, Image, ScrollView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 import { featured } from '../constants';
 import { themeColor } from '../theme';
 import { useNavigation } from '@react-navigation/native';
+import { useSelector } from 'react-redux';
+import { selectRestaurant } from '../slices/restaurantSlice';
+import { removeFromCart, selectCartItem, selectCartTotal } from '../slices/cartSlice';
+import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 
 const CartScreen = () => {
     
     const navigation = useNavigation();
-    const restaurant = featured.restaurants[0];
+    const restaurant = useSelector(selectRestaurant);
+    const cartItems = useSelector(selectCartItem);
+    const cartTotal = useSelector(selectCartTotal);
+    const deliveryFee = 2;
+
+    const dispatch = useDispatch();
+
+    const [groupedItems, setGroupedItems] = useState({});
+    useEffect(() => {
+        const items = cartItems.reduce((group, item)=>{
+            if(group[item.id]){
+                group[item.id].push(item);
+            }else{
+                group[item.id]= [item];
+            }
+            return group;
+        },{})
+        setGroupedItems(items);
+    },[cartItems])
+
     return (
         <View className="bg-white flex-1 top-10">
             {/* nút quay về */}
@@ -45,12 +69,13 @@ const CartScreen = () => {
                     }}
                     className="bg-white pt-5">
                     {
-                        restaurant.dishes.map((dish, index) => {
+                        Object.entries(groupedItems).map(([key, items]) =>{
+                            let dish = items[0];
                             return (
-                                <View key={index}
+                                <View key={key}
                                     className="flex-row items-center space-x-3 py-2 px-4 bg-white rounded-3xl  mb-3" style={styles.shadow}>
                                         <Text className="font-bold" style={{color: themeColor.text}}>
-                                            2 x
+                                            {items.length} x
                                         </Text>
                                         <Image source={dish.image} className="w-14 h-14 rounded-full"/>
                                         <Text className="flex-1 font-bold text-gray-700">{dish.name}</Text>
@@ -58,6 +83,7 @@ const CartScreen = () => {
 
                                         {/* trừ */}
                                         <TouchableOpacity
+                                            onPress={()=>dispatch(removeFromCart({id: dish.id}))}
                                             className="p-1 rounded-full"
                                             style={{backgroundColor: themeColor.bgColor(1)}}>
                                             <AntDesign name="minus" size={24} color="white" />
@@ -73,15 +99,15 @@ const CartScreen = () => {
                 <View style={{backgroundColor: themeColor.bgColor(0.2)}} className="p-6 px-8 rounded-t-3xl space-y-4">
                     <View className="flex-row justify-between">
                         <Text className="text-gray-700">Thành tiền:</Text>
-                        <Text className="text-gray-700">20$</Text>
+                        <Text className="text-gray-700">${cartTotal}</Text>
                     </View>
                     <View className="flex-row justify-between">
                         <Text className="text-gray-700">Phí ship:</Text>
-                        <Text className="text-gray-700">2$</Text>
+                        <Text className="text-gray-700">${deliveryFee}</Text>
                     </View>
                     <View className="flex-row justify-between">
                         <Text className="text-gray-700 font-extrabold">Tổng tiền</Text>
-                        <Text className="text-gray-700 font-extrabold">22$</Text>
+                        <Text className="text-gray-700 font-extrabold">${deliveryFee+cartTotal}</Text>
                     </View>
                     <View>
                         <TouchableOpacity

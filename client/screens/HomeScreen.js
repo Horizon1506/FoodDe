@@ -10,11 +10,13 @@ import { featured } from '../constants';
 import FeatureRow from '../components/featureRow';
 
 
+
 const HomeScreen = () => {
     return (
         <SafeAreaView className="bg-white ">
             <StatusBar barStyle="dark-content" />
-
+            {/* Drawer */}
+            
             {/* Thanh tìm kiếm */}
             <View className="flex-row items-center space-x-2 px-4 pb-2 pt-2 ">
                 <View className="flex-row flex-1 items-center p-3 rounded-full border border-gray-300">
