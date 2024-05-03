@@ -8,14 +8,17 @@ const LoginScreen = () => {
   const navigation = useNavigation();
 
   const dummyData = {
-    username: 'admin',
+    username: 'Admin',
     password: '123',
   };
 
   const handleLogin = () => {
     if (username === dummyData.username && password === dummyData.password) {
       Alert.alert('Success', 'Đăng nhập thành công!', [
-        { text: 'OK', onPress: () => navigation.navigate('Home') },
+        { text: 'OK', onPress: () => navigation.reset({
+            index: 0,
+            routes: [{ name: 'Home' }],
+        }) },
       ]);
     } else {
       Alert.alert('Error', 'Thông tin đăng nhập không chính xác!');

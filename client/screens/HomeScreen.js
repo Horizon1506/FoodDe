@@ -16,7 +16,7 @@ import { useContext } from 'react';
 
 // Drawer
 const Drawer = createDrawerNavigator();
-const MyDrawer = ({ route }) => {
+const MyDrawer = () => {
     const navigate = useNavigation();
     // const {username} = route.params;
     
