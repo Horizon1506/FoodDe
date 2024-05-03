@@ -1,21 +1,45 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, View,Text, TextInput, ScrollView } from 'react-native';
+import { StyleSheet, View,Text, TextInput, ScrollView, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-
 import { Ionicons } from '@expo/vector-icons';
 import { themeColor } from '../theme';
 import Categories from '../components/categories';
 import { featured } from '../constants';
 import FeatureRow from '../components/featureRow';
+import { useNavigation } from '@react-navigation/native';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import Favourite from './Favourite';
+import LoginScreen from './LoginScreen';
+import { AuthContext } from '../AuthContext';
+import { useContext } from 'react';
 
-
-
-const HomeScreen = () => {
+// Drawer
+const Drawer = createDrawerNavigator();
+const MyDrawer = ({ route }) => {
+    const navigate = useNavigation();
+    // const {username} = route.params;
+    
     return (
+        <Drawer.Navigator screenOptions={{headerShown:false}}>
+            <Drawer.Screen name="Trang chủ" component={HomeScreen} />
+            <Drawer.Screen name="Yêu thích" component={Favourite} />
+            <Drawer.Screen name="Đăng nhập" component={LoginScreen} />
+            {/* <Drawer.Screen name="Welcome" options={{ drawerLabel: `Welcome` }} component={HomeScreen} /> */}
+        </Drawer.Navigator>
+    );
+}
+
+// HomeScreen
+const HomeScreen = () => {
+
+    const navigate = useNavigation();
+
+    return (
+        
         <SafeAreaView className="bg-white ">
             <StatusBar barStyle="dark-content" />
-            {/* Drawer */}
+            
             
             {/* Thanh tìm kiếm */}
             <View className="flex-row items-center space-x-2 px-4 pb-2 pt-2 ">
@@ -26,9 +50,14 @@ const HomeScreen = () => {
                         <Ionicons name="map" size={24} color="gray" />
                     </View>
                 </View>
-                <View style={{backgroundColor:themeColor.bgColor(1)}} className="p-3  rounded-full">
-                    <Ionicons name="options" size={24} color="white" />
-                </View>
+                
+                <TouchableOpacity
+                    onPress={()=>navigate.openDrawer()}
+                >
+                    <View style={{backgroundColor:themeColor.bgColor(1)}} className="p-3  rounded-full">
+                        <Ionicons name="options" size={24} color="white" />
+                    </View>
+                </TouchableOpacity>
             </View>
 
             {/* Main */}
@@ -63,4 +92,4 @@ const HomeScreen = () => {
 
 const styles = StyleSheet.create({})
 
-export default HomeScreen;
+export default MyDrawer;
