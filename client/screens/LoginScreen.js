@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, TextInput, Alert, SafeAreaView,Image } from 'react-native';
+import { Button, TextInput, Alert, SafeAreaView,Image,Text,View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 
@@ -46,7 +46,11 @@ const LoginScreen = () => {
         onChangeText={setPassword}
         secureTextEntry
       />
-      <Button title="Đăng nhập" onPress={handleLogin} />
+      <Button style={{width:300}} title="Đăng nhập" onPress={handleLogin} />
+      <View style={{ borderBottomColor: 'black', borderBottomWidth: 1, margin: 10,marginTop:30 }} />
+      <Text style={{textAlign:'center',marginTop:30}}>Bạn chưa có tài khoản</Text>
+      <Button title="Đăng Kí" onPress={handleLogin} />
+      {/* Thêm nút đăng kí vào  */}
       
     </SafeAreaView>
   );
