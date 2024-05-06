@@ -71,7 +71,7 @@ export const featured = [
         {
             id: 2,
             name: "Dominos",
-            image: require("../assets/images/pizza.jpg"),
+            image: require("../assets/images/pizza/domino/OIP.jpg"),
             description: "Hot and spicy pizzas",
             lng: 38.2145682,
             lat: -85.5324269,
@@ -83,23 +83,23 @@ export const featured = [
                 {
                   id: 1,
                   name: "pizza",
-                  description: "cheesy garlic pizza",
+                  description: "Pizza hải sản sốt mayonnaise",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/pizza/domino/pizzahaisan.png')
                 },
                 {
                   id: 2,
                   name: "pizza",
-                  description: "cheesy garlic pizza",
+                  description: "Pizza bò tôm nướng kiểu Mỹ",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/pizza/domino/pizzabotomUS.jpg')
                 },
                 {
                   id: 3,
                   name: "pizza",
-                  description: "cheesy garlic pizza",
+                  description: "Pizza rau củ thập cẩm",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/pizza/domino/pizzaraucu.jpg')
                 }
             ]  
         },
@@ -237,7 +237,7 @@ export const featured = [
                 },
                 {
                   id: 2,
-                  name: "pizza",
+                  name: "burger",
                   description: "cheesy garlic pizza",
                   price: 10,
                   image: require('../assets/images/pizzadish.jpeg')
