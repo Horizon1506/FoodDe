@@ -16,6 +16,7 @@ import React, { useState } from 'react';
 import { Provider } from 'react-redux';
 import { store } from './store';
 import LoginScreen from './screens/LoginScreen';
+import RegisterScreen from './screens/RegisterSrceen';
 
 
 const Stack = createNativeStackNavigator();
@@ -38,6 +39,7 @@ export default function App() {
             
             <Stack.Screen name="Home" component={HomeScreen} />
             <Stack.Screen name="Login" component={LoginScreen} />
+            <Stack.Screen name="Register" component={RegisterScreen} />
             <Stack.Screen name="Restaurant" component={RestaurantScreen} />
             <Stack.Screen name="Cart" options={{presentation:"modal"}} component={CartScreen} />
             <Stack.Screen name="OrderPrepairing" options={{presentation:"fullScreenModal"}} component={OrderPrepairing} />
