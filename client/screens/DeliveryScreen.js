@@ -10,7 +10,8 @@ import { MaterialIcons } from '@expo/vector-icons';
 
 const DeliveryScreen = () => {
 
-    const restaurant= featured.restaurants[0];
+const restaurant= useSelector(selectRestaurant);
+    
     const navigation = useNavigation();
     return (
         <View className='flex-1'>

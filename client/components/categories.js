@@ -7,7 +7,6 @@ const Categories = () => {
 
     //active category
     const[activeCategory, setActiveCategory] = useState(null);
-
     return (
         <View className="mt-4">
             {/* categories */}
@@ -32,12 +31,14 @@ const Categories = () => {
 
                                     className={"p-3 rounded-full shadow bg-gray-200 "+btnClass}>
                                     <Image source={category.image} className="w-12 h-12"/>
+                                    
                                 </TouchableOpacity>
 
                                 <Text className={"text-center text-sm "+textClass}>{category.name}</Text>
                             </View>
                             )
                         })
+                        
                 }
             </ScrollView>
         </View>

@@ -71,7 +71,8 @@ const HomeScreen = () => {
                 {/* feature */}
                 <View className="mt-5">
                     {
-                        [featured,featured,featured].map((item, index) => {
+                        featured
+                        .map((item, index) => {
                             return(
                                 <FeatureRow
                                     key={index}
