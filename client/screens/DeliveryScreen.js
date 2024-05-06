@@ -4,19 +4,27 @@ import { useNavigation } from '@react-navigation/native';
 import { featured } from '../constants';
 import { useSelector } from 'react-redux';
 import { selectRestaurant } from '../slices/restaurantSlice';
+import MapView from 'react-native-maps';
 
 const DeliveryScreen = () => {
 
     const restaurant= useSelector(selectRestaurant);
     const navigation = useNavigation();
     return (
-        <View className="flex-1">
-            
-            <Text>Đây là trang thông báo đặt hàng thành công đặt hàng thành công</Text>
+        <View style={styles.container}>
+            <MapView style={styles.map} />
         </View>
     );
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+    },
+    map: {
+      width: '100%',
+      height: '100%',
+    },
+  });
 
 export default DeliveryScreen;
