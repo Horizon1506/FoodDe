@@ -34,8 +34,9 @@ const LoginScreen = () => {
     <SafeAreaView className="m-10" style={{flexDirection:'collum',flex: 1}}>
       <Image style={{width:200,height:200,alignSelf: 'center',marginBottom: 20}} 
       source={require('../assets/images/shipper.png')}  />
+      <Text style={{ fontSize: 30, textAlign: 'center',marginBottom:20 }}>Đăng nhập</Text>
       <TextInput style={{borderWidth: 1, borderColor: 'black', marginBottom: 10,padding: 10, borderRadius: 5,
-       fontSize: 20, textAlign: 'center'}}
+       fontSize: 20, }}
         
        placeholder="Username"
         value={username}
@@ -43,7 +44,7 @@ const LoginScreen = () => {
       />
       
       <TextInput style={{borderWidth: 1, borderColor: 'black', marginBottom: 10,padding: 10, borderRadius: 5,
-       fontSize: 20, textAlign: 'center'}}
+       fontSize: 20, }}
         
        placeholder="Password"
         value={password}
@@ -52,7 +53,7 @@ const LoginScreen = () => {
       />
       <Button title="Đăng nhập" onPress={handleLogin} />
       <View style={{ borderBottomColor: 'black', borderBottomWidth: 1, margin: 10,marginTop:30 }} />
-      <Text style={{textAlign:'center',marginTop:30}}>Bạn chưa có tài khoản</Text>
+      <Text style={{textAlign:'center',marginTop:30,marginBottom:10}}>Bạn chưa có tài khoản</Text>
       <Button title="Đăng Kí" onPress={handleRegister}/>
       {/* Thêm nút đăng kí vào  */}
       
