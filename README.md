@@ -8,4 +8,6 @@ Bước 3: cài thư viện: npm install
 
 Bước 4: npm start để chạy
 
+
 ***Lưu ý: nên chạy trong máy ảo hoặc phần mềm expo, không chạy web vì tailwind không hỗ trợ
+

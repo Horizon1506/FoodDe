@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Button, TextInput, Alert, SafeAreaView } from 'react-native';
+import { Button, TextInput, Alert, SafeAreaView,Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+
 
 const LoginScreen = () => {
   const [username, setUsername] = useState('');
@@ -26,19 +27,27 @@ const LoginScreen = () => {
   };
 
   return (
-    <SafeAreaView className="m-10">
-      <TextInput
-        placeholder="Username"
+    <SafeAreaView className="m-10" style={{flexDirection:'collum',flex: 1}}>
+      <Image style={{width:200,height:200,alignSelf: 'center',marginBottom: 20}} 
+      source={require('../assets/images/shipper.png')}  />
+      <TextInput style={{borderWidth: 1, borderColor: 'black', marginBottom: 10,padding: 10, borderRadius: 5,
+       fontSize: 20, textAlign: 'center'}}
+        
+       placeholder="Username"
         value={username}
         onChangeText={setUsername}
       />
-      <TextInput
-        placeholder="Password"
+      
+      <TextInput style={{borderWidth: 1, borderColor: 'black', marginBottom: 10,padding: 10, borderRadius: 5,
+       fontSize: 20, textAlign: 'center'}}
+        
+       placeholder="Password"
         value={password}
         onChangeText={setPassword}
         secureTextEntry
       />
       <Button title="Đăng nhập" onPress={handleLogin} />
+      
     </SafeAreaView>
   );
 };
