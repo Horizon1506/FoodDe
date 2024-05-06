@@ -46,7 +46,7 @@ const LoginScreen = () => {
         onChangeText={setPassword}
         secureTextEntry
       />
-      <Button style={{width:300}} title="Đăng nhập" onPress={handleLogin} />
+      <Button title="Đăng nhập" onPress={handleLogin} />
       <View style={{ borderBottomColor: 'black', borderBottomWidth: 1, margin: 10,marginTop:30 }} />
       <Text style={{textAlign:'center',marginTop:30}}>Bạn chưa có tài khoản</Text>
       <Button title="Đăng Kí" onPress={handleLogin} />
