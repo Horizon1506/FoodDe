@@ -28,9 +28,124 @@ export const categories = [
 ]
 
 export const featured = [
+
+  //category pizza
+  {
+    id:1, //id của category
+    title:'Hồ Chí Minh',
+    description:'abcdhdh',
+    restaurants:[
+        {
+            id: 1, // này là id của 3 nhà hàng
+            name: "Papa Johns",
+            image: require("../assets/images/pizza/papajohn/logo.png"),
+            description: "Hot and spicy pizzas",
+            lng: 106.629664,
+            lat: 10.823099,
+            address: "434 second street",
+            stars: 4,
+            reviews: "4.4k",
+            category: "Fast Food",
+            dishes: [
+                {
+                  id: 1, // id 3 món ăn trong nhà hàng
+                  name: "Pizza",
+                  description: "Pizza rau củ sốt BBQ",
+                  price: 10,
+                  image: require('../assets/images/pizza/papajohn/pizzaraucusotbbq.jpg')
+                },
+                {
+                  id: 2,
+                  name: "Pizza",
+                  description: "Pizza Pepperoni",
+                  price: 10,
+                  image: require('../assets/images/pizza/papajohn/pizzaxucxich.jpg')
+                },
+                {
+                  id: 3,
+                  name: "Pizza",
+                  description: "Pizza gà tỏi cay",
+                  price: 10,
+                  image: require('../assets/images/pizza/papajohn/pizzagatoicay.jpg')
+                },
+            ],
+        },
+        {
+            id: 2,
+            name: "Dominos",
+            image: require("../assets/images/pizza/domino/OIP.jpg"),
+            description: "Hot and spicy pizzas",
+            lng: 38.2145682,
+            lat: -85.5324269,
+            address: "434 second street",
+            stars: 4,
+            reviews: 4400,
+            category: "Fast Food",
+            dishes: [
+                {
+                  id: 1,
+                  name: "pizza",
+                  description: "Pizza hải sản sốt mayonnaise",
+                  price: 10,
+                  image: require('../assets/images/pizza/domino/pizzahaisan.png')
+                },
+                {
+                  id: 2,
+                  name: "pizza",
+                  description: "Pizza bò tôm nướng kiểu Mỹ",
+                  price: 10,
+                  image: require('../assets/images/pizza/domino/pizzabotomUS.jpg')
+                },
+                {
+                  id: 3,
+                  name: "pizza",
+                  description: "Pizza rau củ thập cẩm",
+                  price: 10,
+                  image: require('../assets/images/pizza/domino/pizzaraucu.jpg')
+                }
+            ]  
+        },
+        {
+            id: 3,
+            name: "Pizza Hut",
+            image: require("../assets/images/pizza/pizzahut/logo.png"),
+            description: "Hot and spicy pizzas",
+            lng: 38.2145682,
+            lat: -85.5324269,
+            address: "434 second street",
+            stars: 4,
+            reviews: 4400,
+            category: "Fast Food",
+            dishes: [
+                {
+                  id: 1,
+                  name: "pizza",
+                  description: "Pizza Hải Sản Nhiệt Đới",
+                  price: 10,
+                  image: require('../assets/images/pizza/pizzahut/PizzaHaiSanNhietDoi.jpg')
+                },
+                {
+                  id: 2,
+                  name: "pizza",
+                  description: "Pizza Hải Sản Xốt Tiêu Đẻn",
+                  price: 10,
+                  image: require('../assets/images/pizza/pizzahut/PizzaHaiSanXotTieuDen.jpg')
+                },
+                {
+                  id: 3,
+                  name: "pizza",
+                  description: "Pizza Xúc Xích Nướng",
+                  price: 10,
+                  image: require('../assets/images/pizza/pizzahut/PizzaXucXichNuong.jpg')
+                }
+            ]  
+        }
+    ],    
+  },
+
   {
     id:1,
-    title:'Hồ Chí Minh',
+    title:'Hà Nội',
     description:'abcdhdh',
     restaurants:[
         {
@@ -140,10 +255,10 @@ export const featured = [
         }
     ],    
   },
-  // other featured objects
+  //category buger
   {
-    id:1,
-    title:'Hà Nội',
+    id:2,
+    title:'Hồ Chí Minh',
     description:'abcdhdh',
     restaurants:[
         {
@@ -216,47 +331,96 @@ export const featured = [
                 }
             ]  
         },
+        
+    ],    
+  },
+  //category drink
+  {
+    id:3,
+    title:'Hồ Chí Minh',
+    description:'abcdhdh',
+    restaurants:[
+        
         {
-            id: 3,
-            name: "Highlands Coffee",
-            image: require("../assets/images/cupcake/Highland/logo.png"),
-            description: "Coffee and Bakery",
+            id: 1,
+            name: "Gongcha",
+            image: require("../assets/images/drink/Gongcha/logo.png"),
+            description: "Hot and spicy pizzas",
             lng: 38.2145682,
             lat: -85.5324269,
             address: "434 second street",
             stars: 4,
             reviews: 4400,
-            category: "Coffee and Bakery",
+            category: "Drink",
             dishes: [
                 {
                   id: 1,
-                  name: "Cake",
-                  description: "Caramel phô mai",
+                  name: "Trà sữa",
+                  description: "Trà sữa xoài",
                   price: 10,
-                  image: require('../assets/images/cupcake/Highland/CARAMELPHOMAI.jpg')
+                  image: require('../assets/images/drink/Gongcha/trasuaxoai.png')
                 },
                 {
                   id: 2,
-                  name: "Cake",
-                  description: "Phô mai chanh dây",
+                  name: "Trà xanh",
+                  description: "Trà xanh đào",
                   price: 10,
-                  image: require('../assets/images/cupcake/Highland/PHOMAICHANHDAY.jpg')
+                  image: require('../assets/images/drink/Gongcha/traxanhdao.png')
                 },
                 {
                   id: 3,
-                  name: "Cake",
-                  description: "Tiramisu",
+                  name: "Milo",
+                  description: "Milo kem chanh",
                   price: 10,
-                  image: require('../assets/images/cupcake/Highland/TIRAMISU.jpg')
+                  image: require('../assets/images/drink/Gongcha/milokemchanh.png')
+                }
+            ]  
+        },
+        {
+            id: 2,
+            name: "Phúc Long",
+            image: require("../assets/images/drink/PhucLong/logo.png"),
+            description: "Drink and Tea",
+            lng: 38.2145682,
+            lat: -85.5324269,
+            address: "434 second street",
+            stars: 4,
+            reviews: 4400,
+            category: "Drink",
+            dishes: [
+                {
+                  id: 1,
+                  name: "Cà phê",
+                  description: "Bạc xỉu",
+                  price: 10,
+                  image: require('../assets/images/drink/PhucLong/bacxiu.png')
+                },
+                {
+                  id: 2,
+                  name: "Trà ",
+                  description: "Matcha Đá xay",
+                  price: 10,
+                  image: require('../assets/images/drink/PhucLong/matcha.png')
+                },
+                {
+                  id: 3,
+                  name: "Trà",
+                  description: "Trà lài đác thơm",
+                  price: 10,
+                  image: require('../assets/images/drink/PhucLong/tralaidacthom.png')
                 }
             ]  
         }
     ],    
   },
-  //category 2
+
+  //category fried chicken
+
+
+  //category cupcake
   {
-    id:2,
-    title:'Bình Dương',
+    id:5,
+    title:'Hồ Chí Minh',
     description:'abcdhdh',
     restaurants:[
         {
@@ -294,76 +458,6 @@ export const featured = [
                 },
             ],
         },
-        {
-            id: 2,
-            name: "Gongcha",
-            image: require("../assets/images/drink/Gongcha/logo.png"),
-            description: "Hot and spicy pizzas",
-            lng: 38.2145682,
-            lat: -85.5324269,
-            address: "434 second street",
-            stars: 4,
-            reviews: 4400,
-            category: "Drink",
-            dishes: [
-                {
-                  id: 1,
-                  name: "Trà sữa",
-                  description: "Trà sữa xoài",
-                  price: 10,
-                  image: require('../assets/images/drink/Gongcha/trasuaxoai.png')
-                },
-                {
-                  id: 2,
-                  name: "Trà xanh",
-                  description: "Trà xanh đào",
-                  price: 10,
-                  image: require('../assets/images/drink/Gongcha/traxanhdao.png')
-                },
-                {
-                  id: 3,
-                  name: "Milo",
-                  description: "Milo kem chanh",
-                  price: 10,
-                  image: require('../assets/images/drink/Gongcha/milokemchanh.png')
-                }
-            ]  
-        },
-        {
-            id: 3,
-            name: "Phúc Long",
-            image: require("../assets/images/drink/PhucLong/logo.png"),
-            description: "Drink and Tea",
-            lng: 38.2145682,
-            lat: -85.5324269,
-            address: "434 second street",
-            stars: 4,
-            reviews: 4400,
-            category: "Drink",
-            dishes: [
-                {
-                  id: 1,
-                  name: "Cà phê",
-                  description: "Bạc xỉu",
-                  price: 10,
-                  image: require('../assets/images/drink/PhucLong/bacxiu.png')
-                },
-                {
-                  id: 2,
-                  name: "Trà ",
-                  description: "Matcha Đá xay",
-                  price: 10,
-                  image: require('../assets/images/drink/PhucLong/matcha.png')
-                },
-                {
-                  id: 3,
-                  name: "Trà",
-                  description: "Trà lài đác thơm",
-                  price: 10,
-                  image: require('../assets/images/drink/PhucLong/tralaidacthom.png')
-                }
-            ]  
-        }
-    ],    
-  },
+    ]
+  }
 ];

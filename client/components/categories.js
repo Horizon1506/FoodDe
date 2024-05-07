@@ -3,10 +3,13 @@ import { StyleSheet, View ,Text, ScrollView, Image, TouchableOpacity} from 'reac
 import { useState } from 'react';
 import { categories } from '../constants';
 
-const Categories = () => {
+const Categories = ({activeCategory ,setActiveCategory}) => {
 
     //active category
-    const[activeCategory, setActiveCategory] = useState(null);
+    // const[activeCategory, setActiveCategory] = useState(1);
+
+    
+
     return (
         <View className="mt-4">
             {/* categories */}
