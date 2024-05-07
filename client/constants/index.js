@@ -16,8 +16,8 @@ export const categories = [
     },
     {
         id:4,
-        name:'spaghetti',
-        image: require('../assets/images/icons8-spaghetti-96.png'),
+        name:'fried chicken',
+        image: require('../assets/images/icons8-fried-chicken.png'),
     },
     {
         id:5,
