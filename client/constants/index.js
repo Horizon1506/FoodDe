@@ -36,7 +36,7 @@ export const featured = [
         {
             id: 1,
             name: "Papa Johns",
-            image: require("../assets/images/pizza.jpg"),
+            image: require("../assets/images/pizza/papajohn/logo.png"),
             description: "Hot and spicy pizzas",
             lng: 106.629664,
             lat: 10.823099,
@@ -47,24 +47,24 @@ export const featured = [
             dishes: [
                 {
                   id: 1,
-                  name: "pizza",
-                  description: "cheesy garlic pizza",
+                  name: "Pizza",
+                  description: "Pizza rau củ sốt BBQ",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/pizza/papajohn/pizzaraucusotbbq.jpg')
                 },
                 {
                   id: 2,
-                  name: "pizza",
-                  description: "cheesy garlic pizza",
+                  name: "Pizza",
+                  description: "Pizza Pepperoni",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/pizza/papajohn/pizzaxucxich.jpg')
                 },
                 {
                   id: 3,
-                  name: "pizza",
-                  description: "cheesy garlic pizza",
+                  name: "Pizza",
+                  description: "Pizza gà tỏi cay",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/pizza/papajohn/pizzagatoicay.jpg')
                 },
             ],
         },
@@ -106,7 +106,7 @@ export const featured = [
         {
             id: 3,
             name: "Pizza Hut",
-            image: require("../assets/images/pizza.jpg"),
+            image: require("../assets/images/pizza/pizzahut/logo.png"),
             description: "Hot and spicy pizzas",
             lng: 38.2145682,
             lat: -85.5324269,
@@ -118,23 +118,23 @@ export const featured = [
                 {
                   id: 1,
                   name: "pizza",
-                  description: "cheesy garlic pizza",
+                  description: "Pizza Hải Sản Nhiệt Đới",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/pizza/pizzahut/PizzaHaiSanNhietDoi.jpg')
                 },
                 {
                   id: 2,
                   name: "pizza",
-                  description: "cheesy garlic pizza",
+                  description: "Pizza Hải Sản Xốt Tiêu Đẻn",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/pizza/pizzahut/PizzaHaiSanXotTieuDen.jpg')
                 },
                 {
                   id: 3,
                   name: "pizza",
-                  description: "cheesy garlic pizza",
+                  description: "Pizza Xúc Xích Nướng",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/pizza/pizzahut/PizzaXucXichNuong.jpg')
                 }
             ]  
         }
