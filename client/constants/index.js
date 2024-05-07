@@ -408,6 +408,20 @@ export const featured = [
                   description: "Trà lài đác thơm",
                   price: 10,
                   image: require('../assets/images/drink/PhucLong/tralaidacthom.png')
+                },
+                {
+                  id: 4,
+                  name: "Trà",
+                  description: "Trà Lài Mãng Cầu Đá Xay",
+                  price: 10,
+                  image: require('../assets/images/drink/PhucLong/6a3bbf6dac792d-mangcaudaxay.png')
+                },
+                {
+                  id: 5,
+                  name: "Sữa Chua",
+                  description: "Phúc Bồn Tử Đác Cam",
+                  price: 10,
+                  image: require('../assets/images/drink/PhucLong/4136b3715bff3e-sachuaphcbntccamphclong.png')
                 }
             ]  
         }
@@ -415,7 +429,110 @@ export const featured = [
   },
 
   //category fried chicken
-
+  {
+    id:4,
+    title:'Hồ Chí Minh',
+    description:'abcdhdh',
+    restaurants:[
+        {
+            id: 1,
+            name: "KFC",
+            image: require("../assets/images/friedchicken/images.png"),
+            description: "Fried chicken",
+            lng: 106.629664,
+            lat: 10.823099,
+            address: "426 second street",
+            stars: 4,
+            reviews: "4.5k",
+            category: "Fried chicken",
+            dishes: [
+                {
+                  id: 1,
+                  name: "2 GÀ RÁN TENDERS ",
+                  description: "VỊ NGUYÊN BẢN",
+                  price: 2,
+                  image: require('../assets/images/friedchicken/10-TENDERS.jpg')
+                },
+                {
+                  id: 2,
+                  name: "Miếng Gà Rán",
+                  description: "Truyền Thống",
+                  price: 10,
+                  image: require('../assets/images/friedchicken/1-Fried-Chicken.jpg')
+                },
+                {
+                  id: 3,
+                  name: "Cánh Gà Hot Wings",
+                  description: "Vị Truyền Thống",
+                  price: 10,
+                  image: require('../assets/images/friedchicken/3-HW.jpg')
+                },
+                {
+                  id: 4,
+                  name: "GÀ VIÊN ",
+                  description: "Vị Truyền Thống",
+                  price: 10,
+                  image: require('../assets/images/friedchicken/POP-R.jpg')
+                },
+                {
+                  id: 5,
+                  name: "Gà Miếng Nuggets",
+                  description: "Vị Nguyên Bản",
+                  price: 10,
+                  image: require('../assets/images/friedchicken/3_Nuggests.jpg')
+                },
+              ]  
+            },
+            {
+                id: 2,
+                name: "JOLLIBEE",
+                image: require("../assets/images/friedchicken/logo.png"),
+                description: "Fried chicken",
+                lng: 38.2145682,
+                lat: -85.5324269,
+                address: "403 second street",
+                stars: 4,
+                reviews: "4.7k",
+                category: "Fried chicken",
+                dishes: [
+                    {
+                      id: 1,
+                      name: "MIẾNG GÀ GIÒN VUI VẺ",
+                      description: "Truyền Thống",
+                      price: 7,
+                      image: require('../assets/images/friedchicken/1_mi_ng_ggvv_png_1.png')
+                    },
+                    {
+                      id: 2,
+                      name: "01 MIẾNG GÀ GIÒN VUI VẺ ",
+                      description: "+ 1 MỲ Ý SỐT BÒ BẰM + 01 NƯỚC NGỌT",
+                      price: 9,
+                      image: require('../assets/images/friedchicken/combo_app_2024-04.png')
+                    },
+                    {
+                      id: 3,
+                      name: "MIẾNG GÀ SỐT CAY",
+                      description: "Siêu Cay",
+                      price: 10,
+                      image: require('../assets/images/friedchicken/g_s_t_cay_1.png')
+                    },
+                    {
+                      id: 4,
+                      name: "1 MIẾNG GÀ SỐT CAY",
+                      description: "+ KHOAI TÂY + NƯỚC NGỌT",
+                      price: 10,
+                      image: require('../assets/images/friedchicken/1_ga_sot_cay_khoai_nc.png')
+                    }, {
+                      id: 5,
+                      name: "1 MIẾNG GÀ SỐT CAY + CƠM",
+                      description: "Siêu Ngon",
+                      price: 10,
+                      image: require('../assets/images/friedchicken/38b2b63ad78a31-1gstcaycm_2.jpg')
+                    }                    
+            ],
+        },
+    ]
+  },
 
   //category cupcake
   {
@@ -456,47 +573,70 @@ export const featured = [
                   price: 10,
                   image: require('../assets/images/cupcake/Zen/sandwichtraicay.png')
                 },
-
-            ],
+                {
+                  id: 4,
+                  name: "Bánh ngọt",
+                  description: "Panna Cotta Pineapple",
+                  price: 10,
+                  image: require('../assets/images/cupcake/Zen/vn-11134517-7r98o-lt289dvnsyiscb@resize_ss120x120!@crop_w120_h120_cT.jpg')
+                },
+                {
+                  id: 5,
+                  name: "Bánh ngọt",
+                  description: "Panda Kaya",
+                  price: 10,
+                  image: require('../assets/images/cupcake/Zen/vn-11134517-7r98o-lt27uv7onv0k9d@resize_ss120x120!@crop_w120_h120_cT.jpg')
+                },
+            ],   
+          },
+          {
+              id: 2,
+              name: "HIGHLANDS",
+              image: require("../assets/images/cupcake/Highland/logo.png"),
+              description: "Fried chicken",
+              lng: 38.2145682,
+              lat: -85.5324269,
+              address: "303 second street",
+              stars: 4,
+              reviews: "4.7k",
+              category: "HIGHLANDS",
+              dishes: [
+                  {
+                    id: 1,
+                    name: "Bánh ngọt",
+                    description: "Phomai Chanh Dây",
+                    price: 7,
+                    image: require('../assets/images/cupcake/Highland/PHOMAICHANHDAY.jpg')
+                  },
+                  {
+                    id: 2,
+                    name: "Bánh ngọt",
+                    description: "TIRAMISU",
+                    price: 9,
+                    image: require('../assets/images/cupcake/Highland/TIRAMISU.jpg')
+                  },
+                  {
+                    id: 3,
+                    name: "Bánh ngọt",
+                    description: "Bánh Chuối",
+                    price: 10,
+                    image: require('../assets/images/cupcake/Highland/270_crop_BANHCHUOI.jpg')
+                  },
+                  {
+                    id: 4,
+                    name: "Bánh ngọt",
+                    description: "Phomai Trà Xanh",
+                    price: 10,
+                    image: require('../assets/images/cupcake/Highland/270_crop_PHOMAITRAXANH.jpg')
+                  }, {
+                    id: 5,
+                    name: "Bánh ngọt",
+                    description: "Mousses Đào",
+                    price: 10,
+                    image: require('../assets/images/cupcake/Highland/270_crop_MOUSSEDAO.png')
+                  }                    
+          ],        
         },
-        {
-          id: 2,
-            name: "Highland Coffee",
-            image: require("../assets/images/cupcake/Highland/logo.png"),
-            description: "Hot and spicy pizzas",
-            lng: 106.629664,
-            lat: 10.823099,
-            address: "434 second street",
-            stars: 4,
-            reviews: "4.4k",
-            category: "Bakery",
-            dishes: [
-                {
-                  id: 1,
-                  name: "Bánh ngọt",
-                  description: "Bông lan chà bông",
-                  price: 10,
-                  image: require('../assets/images/cupcake/Zen/bonglanchabong.png')
-                },
-                {
-                  id: 2,
-                  name: "Bánh ngọt",
-                  description: "Crepe Phô mai",
-                  price: 10,
-                  image: require('../assets/images/cupcake/Zen/crepephomai.png')
-                },
-                {
-                  id: 3,
-                  name: "Bánh ngọt",
-                  description: "Sandwich Trái cây Nhiệt Đới",
-                  price: 10,
-                  image: require('../assets/images/cupcake/Zen/sandwichtraicay.png')
-                },
-            ],
-        },
-
-        
-
     ]
   }
 ];
