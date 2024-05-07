@@ -148,8 +148,8 @@ export const featured = [
     restaurants:[
         {
             id: 1,
-            name: "Papa Johns",
-            image: require("../assets/images/pizza.jpg"),
+            name: "Burger King",
+            image: require("../assets/images/burger/BurgerKing/logo.png"),
             description: "Hot and spicy pizzas",
             lng: 105.8342,
             lat: 21.0278,
@@ -160,32 +160,32 @@ export const featured = [
             dishes: [
                 {
                   id: 1,
-                  name: "pizza",
-                  description: "cheesy garlic pizza",
+                  name: "Burger",
+                  description: "Burger cá",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/burger/BurgerKing/burgerca.jpg')
                 },
                 {
                   id: 2,
-                  name: "pizza",
-                  description: "cheesy garlic pizza",
+                  name: "Burger",
+                  description: "Burger Gà Nướng",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/burger/BurgerKing/burgertender.jpg')
                 },
                 {
                   id: 3,
-                  name: "pizza",
-                  description: "cheesy garlic pizza",
+                  name: "Burger",
+                  description: "Burger Whopper",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/burger/BurgerKing/burgewhopper.jpg')
                 },
             ],
         },
         {
             id: 2,
-            name: "Dominos",
-            image: require("../assets/images/pizza.jpg"),
-            description: "Hot and spicy pizzas",
+            name: "McDonalds",
+            image: require("../assets/images/burger/McDonalds/logo.png"),
+            description: "Burger",
             lng: 38.2145682,
             lat: -85.5324269,
             address: "434 second street",
@@ -195,59 +195,59 @@ export const featured = [
             dishes: [
                 {
                   id: 1,
-                  name: "pizza",
-                  description: "cheesy garlic pizza",
+                  name: "Burger",
+                  description: "Burger Double Cheese",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/burger/McDonalds/burger2chesse.png')
                 },
                 {
                   id: 2,
-                  name: "pizza",
-                  description: "cheesy garlic pizza",
+                  name: "Burger",
+                  description: "Burger Gà Cay",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/burger/McDonalds/burgergacay.png')
                 },
                 {
                   id: 3,
-                  name: "pizza",
-                  description: "cheesy garlic pizza",
+                  name: "Burger",
+                  description: "Burger Big Mac",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/burger/McDonalds/burgerbigmac.png')
                 }
             ]  
         },
         {
             id: 3,
-            name: "Pizza Hut",
-            image: require("../assets/images/pizza.jpg"),
-            description: "Hot and spicy pizzas",
+            name: "Highlands Coffee",
+            image: require("../assets/images/cupcake/Highland/logo.png"),
+            description: "Coffee and Bakery",
             lng: 38.2145682,
             lat: -85.5324269,
             address: "434 second street",
             stars: 4,
             reviews: 4400,
-            category: "Fast Food",
+            category: "Coffee and Bakery",
             dishes: [
                 {
                   id: 1,
-                  name: "pizza",
-                  description: "cheesy garlic pizza",
+                  name: "Cake",
+                  description: "Caramel phô mai",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/cupcake/Highland/CARAMELPHOMAI.jpg')
                 },
                 {
                   id: 2,
-                  name: "burger",
-                  description: "cheesy garlic pizza",
+                  name: "Cake",
+                  description: "Phô mai chanh dây",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/cupcake/Highland/PHOMAICHANHDAY.jpg')
                 },
                 {
                   id: 3,
-                  name: "pizza",
-                  description: "cheesy garlic pizza",
+                  name: "Cake",
+                  description: "Tiramisu",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/cupcake/Highland/TIRAMISU.jpg')
                 }
             ]  
         }
@@ -261,106 +261,106 @@ export const featured = [
     restaurants:[
         {
             id: 1,
-            name: "Papa Johns",
-            image: require("../assets/images/pizza.jpg"),
+            name: "Zen Bakery",
+            image: require("../assets/images/cupcake/Zen/logo.png"),
             description: "Hot and spicy pizzas",
             lng: 106.629664,
             lat: 10.823099,
             address: "434 second street",
             stars: 4,
             reviews: "4.4k",
-            category: "Fast Food",
+            category: "Bakery",
             dishes: [
                 {
                   id: 1,
-                  name: "pizza",
-                  description: "cheesy garlic pizza",
+                  name: "Bánh ngọt",
+                  description: "Bông lan chà bông",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/cupcake/Zen/bonglanchabong.png')
                 },
                 {
                   id: 2,
-                  name: "pizza",
-                  description: "cheesy garlic pizza",
+                  name: "Bánh ngọt",
+                  description: "Crepe Phô mai",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/cupcake/Zen/crepephomai.png')
                 },
                 {
                   id: 3,
-                  name: "pizza",
-                  description: "cheesy garlic pizza",
+                  name: "Bánh ngọt",
+                  description: "Sandwich Trái cây Nhiệt Đới",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/cupcake/Zen/sandwichtraicay.png')
                 },
             ],
         },
         {
             id: 2,
-            name: "Dominos",
-            image: require("../assets/images/pizza.jpg"),
+            name: "Gongcha",
+            image: require("../assets/images/drink/Gongcha/logo.png"),
             description: "Hot and spicy pizzas",
             lng: 38.2145682,
             lat: -85.5324269,
             address: "434 second street",
             stars: 4,
             reviews: 4400,
-            category: "Fast Food",
+            category: "Drink",
             dishes: [
                 {
                   id: 1,
-                  name: "pizza",
-                  description: "cheesy garlic pizza",
+                  name: "Trà sữa",
+                  description: "Trà sữa xoài",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/drink/Gongcha/trasuaxoai.png')
                 },
                 {
                   id: 2,
-                  name: "pizza",
-                  description: "cheesy garlic pizza",
+                  name: "Trà xanh",
+                  description: "Trà xanh đào",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/drink/Gongcha/traxanhdao.png')
                 },
                 {
                   id: 3,
-                  name: "pizza",
-                  description: "cheesy garlic pizza",
+                  name: "Milo",
+                  description: "Milo kem chanh",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/drink/Gongcha/milokemchanh.png')
                 }
             ]  
         },
         {
             id: 3,
-            name: "Pizza Hut",
-            image: require("../assets/images/pizza.jpg"),
-            description: "Hot and spicy pizzas",
+            name: "Phúc Long",
+            image: require("../assets/images/drink/PhucLong/logo.png"),
+            description: "Drink and Tea",
             lng: 38.2145682,
             lat: -85.5324269,
             address: "434 second street",
             stars: 4,
             reviews: 4400,
-            category: "Fast Food",
+            category: "Drink",
             dishes: [
                 {
                   id: 1,
-                  name: "pizza",
-                  description: "cheesy garlic pizza",
+                  name: "Cà phê",
+                  description: "Bạc xỉu",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/drink/PhucLong/bacxiu.png')
                 },
                 {
                   id: 2,
-                  name: "pizza",
-                  description: "cheesy garlic pizza",
+                  name: "Trà ",
+                  description: "Matcha Đá xay",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/drink/PhucLong/matcha.png')
                 },
                 {
                   id: 3,
-                  name: "pizza",
-                  description: "cheesy garlic pizza",
+                  name: "Trà",
+                  description: "Trà lài đác thơm",
                   price: 10,
-                  image: require('../assets/images/pizzadish.jpeg')
+                  image: require('../assets/images/drink/PhucLong/tralaidacthom.png')
                 }
             ]  
         }
