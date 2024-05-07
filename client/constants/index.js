@@ -456,8 +456,47 @@ export const featured = [
                   price: 10,
                   image: require('../assets/images/cupcake/Zen/sandwichtraicay.png')
                 },
+
             ],
         },
+        {
+          id: 2,
+            name: "Highland Coffee",
+            image: require("../assets/images/cupcake/Highland/logo.png"),
+            description: "Hot and spicy pizzas",
+            lng: 106.629664,
+            lat: 10.823099,
+            address: "434 second street",
+            stars: 4,
+            reviews: "4.4k",
+            category: "Bakery",
+            dishes: [
+                {
+                  id: 1,
+                  name: "Bánh ngọt",
+                  description: "Bông lan chà bông",
+                  price: 10,
+                  image: require('../assets/images/cupcake/Zen/bonglanchabong.png')
+                },
+                {
+                  id: 2,
+                  name: "Bánh ngọt",
+                  description: "Crepe Phô mai",
+                  price: 10,
+                  image: require('../assets/images/cupcake/Zen/crepephomai.png')
+                },
+                {
+                  id: 3,
+                  name: "Bánh ngọt",
+                  description: "Sandwich Trái cây Nhiệt Đới",
+                  price: 10,
+                  image: require('../assets/images/cupcake/Zen/sandwichtraicay.png')
+                },
+            ],
+        },
+
+        
+
     ]
   }
 ];
