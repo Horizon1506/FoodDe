@@ -33,8 +33,8 @@ const LoginScreen = () => {
   return (
     <SafeAreaView className="m-10" style={{flexDirection:'collum',flex: 1}}>
       <Image style={{width:200,height:200,alignSelf: 'center',marginBottom: 20}} 
-      source={require('../assets/images/shipper.png')}  />
-      <Text style={{ fontSize: 30, textAlign: 'center',marginBottom:20 }}>Đăng nhập</Text>
+      source={require('../assets/images/FoodDe.png')}  />
+      <Text style={{ fontSize: 30, textAlign: 'center',marginBottom:20 ,fontWeight:'bold'}}>Đăng nhập</Text>
       <TextInput style={{backgroundColor:'white',color:'orange', marginBottom: 10,padding: 10, borderRadius: 50,
        fontSize: 20,textAlign:'center' }}
         
@@ -62,7 +62,7 @@ const LoginScreen = () => {
       
       <TouchableOpacity style={{marginBottom: 10,padding: 10, borderRadius: 50,backgroundColor:'white', }} 
        onPress={handleRegister}>
-       <Text style={{textAlign:'center',color:'orange',fontSize:20,fontWeight:'bold'}}> Đăng kí </Text>
+       <Text style={{textAlign:'center',color:'orange',fontSize:20,fontWeight:'bold'}}> Đăng ký </Text>
       </TouchableOpacity>   
       {/* Thêm nút đăng kí vào  */}
       

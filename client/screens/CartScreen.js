@@ -66,13 +66,15 @@ const CartScreen = () => {
                         </TouchableOpacity>
                 </View>
                 {/* ghi chú */}
+                <View className="p-4">
                 <Text>Ghi chú:</Text>
                 <TextInput
                 value={note}
                 onChangeText={setNote}
-                placeholder="Thêm ghi chú..."
+                placeholder="Thêm ghi chú cho cửa hàng..."
                 style={styles.input}
                 />
+                </View>
                 <ScrollView
                     showsHorizontalScrollIndicator={false}
                     contentContainerStyle={{
