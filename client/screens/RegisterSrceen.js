@@ -4,6 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 
 const RegisterScreen = () => {
   const [username, setUsername] = useState('');
+  const [phonenumber, setPhonenumber] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
@@ -18,13 +19,19 @@ const RegisterScreen = () => {
     <SafeAreaView className= 'm-10'>
     <View>
       <Image style={{width:200,height:200,alignSelf: 'center',marginBottom: 20}} 
-      source={require('../assets/images/signup.jpg')}  />
+      source={require('../assets/images/FoodDe.png')}  />
       <Text style={{ fontSize: 30, textAlign: 'center',marginBottom:30,fontWeight:'bold' }}>Đăng ký</Text>
       <TextInput style={{backgroundColor:'white',color:'orange', marginBottom: 10,padding: 10, borderRadius: 50,
        fontSize: 20,textAlign:'center',}}
         placeholder="Username"
         value={username}
         onChangeText={setUsername}
+      />
+      <TextInput style={{backgroundColor:'white',color:'orange', marginBottom: 10,padding: 10, borderRadius: 50,
+       fontSize: 20,textAlign:'center',}}
+        placeholder="Phone number"
+        value={phonenumber}
+        onChangeText={setPhonenumber}
       />
       <TextInput style={{backgroundColor:'white',color:'orange', marginBottom: 10,padding: 10, borderRadius: 50,
        fontSize: 20,textAlign:'center',}}
