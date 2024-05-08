@@ -40,9 +40,12 @@ const HomeScreen = () => {
     // Define state for active category
     const [activeCategory, setActiveCategory] = useState(1);
 
+    // Define state for search value
+    const [searchValue, setSearchValue] = useState('');
+
     //tim kiem
     const handleSearchPress = () => {
-        navigate.navigate('SearchResults');
+        navigate.navigate('SearchResults', {searchValue} );
     };
     
     return (
@@ -55,7 +58,7 @@ const HomeScreen = () => {
             <View className="flex-row items-center space-x-2 px-4 pb-2 pt-2 ">
                 <View className="flex-row flex-1 items-center p-3 rounded-full border border-gray-300">
                     <Ionicons name="search" size={24} color="gray" />
-                        <TextInput placeholder='Tìm kiếm' className="nl-2 flex-1"/>
+                        <TextInput value={searchValue} onChangeText={setSearchValue} placeholder='Tìm kiếm nhà hàng...' className="nl-2 flex-1"/>
                     <View className="flex-row items-center space-x-1 border-0 border-l-2 pl-2 border-l-gray-300">
                         <TouchableOpacity onPress={handleSearchPress}> 
                             <Text className="font-semibold text-gray-500">Tìm Kiếm</Text>

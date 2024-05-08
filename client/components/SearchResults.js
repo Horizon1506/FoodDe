@@ -1,13 +1,33 @@
 import React from 'react';
 import { Text, View } from 'react-native';
+import { useRoute } from '@react-navigation/native';
+import { featured } from '../constants';
+import FeatureRow from './featureRow';
 
 const SearchResults = () => {
-  // Fetch and display the search results here
+  const route = useRoute();
+  const { searchValue } = route.params;
+
+  // search
+    const allRestaurants = featured.reduce((acc, category) => {
+        return acc.concat(category.restaurants);
+    }, []);
+
+    const filteredRestaurants = allRestaurants.filter(restaurant =>
+        restaurant.name.toLowerCase().includes(searchValue.toLowerCase())
+    );
 
   return (
-    <View>
+    <View className="mt-10">
       <Text>Search Results</Text>
-      {/* Display the search results */}
+      {filteredRestaurants.map((restaurant, index) => (
+        <FeatureRow
+          key={index}
+          title={restaurant.name}
+          restaurants={restaurant.dishes} // Assuming 'dishes' are the 'restaurants' for FeatureRow
+          description={restaurant.description}
+        />
+      ))}
     </View>
   );
 };
