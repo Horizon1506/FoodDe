@@ -3,10 +3,12 @@ import { StyleSheet, View ,Text, ScrollView, Image, TouchableOpacity} from 'reac
 import { useState } from 'react';
 import { categories } from '../constants';
 
-const Categories = () => {
+const Categories = ({activeCategory ,setActiveCategory}) => {
 
     //active category
-    const[activeCategory, setActiveCategory] = useState(null);
+    // const[activeCategory, setActiveCategory] = useState(1);
+
+    
 
     return (
         <View className="mt-4">
@@ -32,12 +34,14 @@ const Categories = () => {
 
                                     className={"p-3 rounded-full shadow bg-gray-200 "+btnClass}>
                                     <Image source={category.image} className="w-12 h-12"/>
+                                    
                                 </TouchableOpacity>
 
                                 <Text className={"text-center text-sm "+textClass}>{category.name}</Text>
                             </View>
                             )
                         })
+                        
                 }
             </ScrollView>
         </View>

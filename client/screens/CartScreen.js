@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { StyleSheet, View, Text,TouchableOpacity, Image, ScrollView } from 'react-native';
+import { StyleSheet, View, Text,TouchableOpacity, Image, ScrollView,TextInput } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 import { featured } from '../constants';
@@ -18,6 +18,8 @@ const CartScreen = () => {
     const cartItems = useSelector(selectCartItem);
     const cartTotal = useSelector(selectCartTotal);
     const deliveryFee = 2;
+
+    const [note, setNote] = useState('');
 
     const dispatch = useDispatch();
 
@@ -49,7 +51,8 @@ const CartScreen = () => {
                     <Text className="text-center text-2xl font-bold">Your Cart</Text>
                     <Text className="text-center text-gray-500">{restaurant.name}</Text>
                 </View>
-
+                
+                
                 {/* delivery time */}
                 <View style={{backgroundColor: themeColor.bgColor(0.2)}}
                     className="flex-row px-4 items-center">
@@ -61,6 +64,16 @@ const CartScreen = () => {
                                 Thay đổi
                             </Text>
                         </TouchableOpacity>
+                </View>
+                {/* ghi chú */}
+                <View className="p-4">
+                <Text>Ghi chú:</Text>
+                <TextInput
+                value={note}
+                onChangeText={setNote}
+                placeholder="Thêm ghi chú cho cửa hàng..."
+                style={styles.input}
+                />
                 </View>
                 <ScrollView
                     showsHorizontalScrollIndicator={false}
@@ -121,6 +134,7 @@ const CartScreen = () => {
                         </TouchableOpacity>
                     </View>
                 </View>
+                
             </View>
         </View>
     );
