@@ -1,8 +1,9 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View,ScrollView } from 'react-native';
 import { useRoute } from '@react-navigation/native';
 import { featured } from '../constants';
 import FeatureRow from './featureRow';
+
 
 const SearchResults = () => {
   const route = useRoute();
@@ -19,7 +20,12 @@ const SearchResults = () => {
 
   return (
     <View className="mt-10">
-      <Text>Search Results</Text>
+      <View>
+      <Text className='m-3 text-2xl font-bold text-orange-500'>Search Results</Text>
+      </View>
+      <ScrollView>
+
+  
       {filteredRestaurants.map((restaurant, index) => (
         <FeatureRow
           key={index}
@@ -27,7 +33,9 @@ const SearchResults = () => {
           restaurants={restaurant.dishes} // Assuming 'dishes' are the 'restaurants' for FeatureRow
           description={restaurant.description}
         />
+      
       ))}
+      </ScrollView>
     </View>
   );
 };

@@ -545,35 +545,35 @@ export const featured = [
             dishes: [
                 {
                   id: 1,
-                  name: "Cà phê",
+                  name: "Cà phê bạc xỉu",
                   description: "Bạc xỉu",
                   price: 10,
                   image: require('../assets/images/drink/PhucLong/bacxiu.png')
                 },
                 {
                   id: 2,
-                  name: "Trà ",
+                  name: "Matcha Đá xay ",
                   description: "Matcha Đá xay",
                   price: 10,
                   image: require('../assets/images/drink/PhucLong/matcha.png')
                 },
                 {
                   id: 3,
-                  name: "Trà",
+                  name: "Trà lài đác thơm",
                   description: "Trà lài đác thơm",
                   price: 10,
                   image: require('../assets/images/drink/PhucLong/tralaidacthom.png')
                 },
                 {
                   id: 4,
-                  name: "Trà",
+                  name: "Trà lài mãng cầu đá xay",
                   description: "Trà Lài Mãng Cầu Đá Xay",
                   price: 10,
                   image: require('../assets/images/drink/PhucLong/6a3bbf6dac792d-mangcaudaxay.png')
                 },
                 {
                   id: 5,
-                  name: "Sữa Chua",
+                  name: "Phúc Bồn Tử Đác Cam",
                   description: "Phúc Bồn Tử Đác Cam",
                   price: 10,
                   image: require('../assets/images/drink/PhucLong/4136b3715bff3e-sachuaphcbntccamphclong.png')
@@ -637,35 +637,35 @@ export const featured = [
             dishes: [
                 {
                   id: 1,
-                  name: "Cà phê",
+                  name: "Cà phê bạc xỉu",
                   description: "Bạc xỉu",
                   price: 10,
                   image: require('../assets/images/drink/PhucLong/bacxiu.png')
                 },
                 {
                   id: 2,
-                  name: "Trà ",
+                  name: "Matcha Đá xay ",
                   description: "Matcha Đá xay",
                   price: 10,
                   image: require('../assets/images/drink/PhucLong/matcha.png')
                 },
                 {
                   id: 3,
-                  name: "Trà",
+                  name: "Trà lài đác thơm",
                   description: "Trà lài đác thơm",
                   price: 10,
                   image: require('../assets/images/drink/PhucLong/tralaidacthom.png')
                 },
                 {
                   id: 4,
-                  name: "Trà",
+                  name: "Trà lài mãng cầu đá xay",
                   description: "Trà Lài Mãng Cầu Đá Xay",
                   price: 10,
                   image: require('../assets/images/drink/PhucLong/6a3bbf6dac792d-mangcaudaxay.png')
                 },
                 {
                   id: 5,
-                  name: "Sữa Chua",
+                  name: "Phúc bồn tử đác cam",
                   description: "Phúc Bồn Tử Đác Cam",
                   price: 10,
                   image: require('../assets/images/drink/PhucLong/4136b3715bff3e-sachuaphcbntccamphclong.png')

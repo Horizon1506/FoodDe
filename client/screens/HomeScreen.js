@@ -25,7 +25,7 @@ const MyDrawer = () => {
     return (
         <Drawer.Navigator screenOptions={{headerShown:false}}>
             <Drawer.Screen name="Trang chủ" component={HomeScreen} />
-            <Drawer.Screen name="Yêu thích" component={Favourite} />
+            {/*<Drawer.Screen name="Yêu thích" component={Favourite} />*/}
             <Drawer.Screen name="Đăng nhập" component={LoginScreen} />
             {/* <Drawer.Screen name="Welcome" options={{ drawerLabel: `Welcome` }} component={HomeScreen} /> */}
         </Drawer.Navigator>
